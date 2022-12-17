@@ -26,7 +26,7 @@
       
       <h2 class="titles">OLÁ, EU SOU O GABRIEL MESQUITA 👋</h2>
       
-      <p>Um estudante obstinado com a expansão de meus conhecimentos, buscando por meio da implantação na prática adquirir um maior entendimento sobre as engrenagens que compõem a área de desenvolvimento. Atualmente estou cursando Engenharia de Software na UFG e estou aberto para oportunidades de emprego, será um grande prazer conversar a respeito de possiveis contratações.</p>
+      <p>Um estudante obstinado com a expansão de meus conhecimentos, buscando por meio da prática adquirir um maior entendimento sobre as engrenagens que compõem a área de desenvolvimento. Atualmente estou cursando Engenharia de Software na UFG e estou aberto para oportunidades de emprego, será um grande prazer conversar a respeito de possiveis contratações.</p>
 
       <p>Dentre minhas competências estão as seguintes tecnologias:</p>
 
@@ -56,7 +56,7 @@
           <div class="card-content">
             <h3>Twitter Bot</h3>
             <p>Por meio de uma API, o bot é capaz de recomendar músicas, informar sobre o clima e aleatoriamente responder tweets.</p>
-            <a href="project-url.html" class="button">Learn More</a>
+            <a href="https://github.com/Gabriel-Mesq/TwitterBot" class="button" target="_blank">Learn More</a>
           </div>
         
         </div>
@@ -68,7 +68,7 @@
           <div class="card-content">
             <h3>Spotify Playlist Dowloader</h3>
             <p>Capaz de por meio da URL de uma playlist do Spotify gerar uma pasta de músicas no formato .mp3</p>
-            <a href="project-url.html" class="button">Learn More</a>
+            <a href="project-url.html" class="button" target="_blank">Learn More</a>
           </div>
         
         </div>
@@ -80,7 +80,7 @@
           <div class="card-content">
             <h3>Criptografia Online</h3>
             <p>Hospedado via GitHub Pages, o site proporciona uma simples, porém astuta, ferramenta para criptografia e descriptografia de mensagens.</p>
-            <a href="project-url.html" class="button">Learn More</a>
+            <a href="project-url.html" class="button" target="_blank">Learn More</a>
           </div>
         
         </div>
@@ -91,19 +91,68 @@
           <div class="card-content">
             <h3>Este Web Portfólio	</h3>
             <p>Esse portifólio foi construído do zero por mim, e graças a ele tive a oportunidade exercitar o uso do CSS Flexbox.</p>
-            <a href="project-url.html" class="button">Learn More</a>
+            <a href="project-url.html" class="button" target="_blank">Learn More</a>
           </div>
         
         </div>
       </div>
     
-    <section id="contact">
-      
-      <h2 class="titles">ENTRE EM CONTATO</h2>
-  
-      <p>AUma funcionalidade de formulário de email será adicionada em breve.</p>
     </section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      
+        <h2 class="titles">CONTATO ✉️</h2>
+        <p>Sinta-se à vontade para entrar em contato pelo formulário abaixo e retornarei o mais breve possível</p>
+        
+        <div class="form-container">
+          
+          <form action='https://formspree.io/f/xyyagkpp' method='post'>
+            
+            <div class="form-field">
+              <label class="form-label" for="name">Nome</label>
+              <input
+                required
+                placeholder="Digite seu nome completo"
+                type="text"
+                class="form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            
+            <div class="form-field">
+              <label class="form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Digite seu email"
+                type="email"
+                class="form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            
+            <div class="form-field">
+              <label class="form-label" for="message">Mensagem</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="form-input"
+                placeholder="Digite sua mensagem"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="button">Submit</button>
+          </form>
+        
+        </div>
+    </section>
+  
   </main>
+  
   <footer>
     <p>Copyright 2022. All rights reserved.</p>
   </footer>
