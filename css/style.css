@@ -234,10 +234,6 @@ button {
     cursor: pointer;
 }
 
-#extras {
-    padding-left: 8%;
-}
-
 dd {
     padding-bottom: 24px;
 }
@@ -254,7 +250,7 @@ dd {
 }
 
 .extra_itens {
-    max-width: 440px;
+    max-width: 640px;
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
