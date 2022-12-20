@@ -1,20 +1,33 @@
+/* Geral */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    padding-top: 100px;
+    list-style: none;
+    box-sizing:border-box
+}
+
+main{
+    margin-top: 120px;
+}
+
+ul {
     list-style: none;
 }
 
+/* Header */
 header {
-    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    position: fixed;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
 }
   
 header h1 {
@@ -44,16 +57,11 @@ nav li:last-of-type {
 nav a {
     color: #333;
     text-decoration: none;
-    font-size: 2.4rem;
-}
-
-main {
-    margin-top: 80px;
-    padding: 20px;
+    font-size: 2.2rem;
 }
 
 section {
-    margin-bottom: 88px;
+    margin-bottom: 64px;
 }
 
 section h2 {
@@ -178,6 +186,7 @@ footer {
     width: 56%;
     border-radius: 8px;
     margin: 5rem auto 0 auto;
+    padding-bottom: 8rem;
 }
 
 form {
@@ -217,11 +226,14 @@ form {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
-    display: inline-block;
     font-weight: 700;
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
     transition: transform .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
 }
 
 
@@ -234,38 +246,106 @@ button {
     cursor: pointer;
 }
 
-dd {
-    padding-bottom: 24px;
+/* Curiosidades */
+
+.slideshow-container {
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
 }
 
-.extra_cards {
-    
-    align-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    padding: 16px 8%;
-}
+.mySlides {
+    display: none;
+    border-radius: 16px;
+  
+  }
 
 .extra_itens {
-    max-width: 640px;
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-    border-radius: 8px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    text-align: center;    
     color: #666;
 }
 
-.extra_itens:nth-child(1) {background: #D3F8E2;}
-.extra_itens:nth-child(2) {background: #E4C1F9;}
-.extra_itens:nth-child(3) {background: #F694C1;}
-.extra_itens:nth-child(4) {background: #EDE7B1;}
-.extra_itens:nth-child(5) {background: #A9DEF9;}
+.mySlides:nth-child(1) {background: #D3F8E2;}
+.mySlides:nth-child(2) {background: #E4C1F9;}
+.mySlides:nth-child(3) {background: #F694C1;}
+.mySlides:nth-child(4) {background: #EDE7B1;}
+.mySlides:nth-child(5) {background: #A9DEF9;}
 
-ul {
-    list-style: none;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  /* Style for screens smaller than 1000px */
+  @media (max-width: 1000px) {
+    
+    .slideshow-container {
+        width: 88%;
+    }
+
+    nav li:last-of-type {
+        margin-right: 52px;
+    }
 }
